@@ -46,4 +46,5 @@ const BotInit = () => {
 
 setInterval(() => {
   BotInit();
+  console.log("Rodou");
 }, 30 * 60 * 1000);
