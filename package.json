@@ -1,0 +1,14 @@
+{
+  "name": "LaionBot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Eduardo Bernardino",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  }
+}
