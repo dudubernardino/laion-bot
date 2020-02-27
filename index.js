@@ -44,6 +44,11 @@ const BotInit = () => {
   Bot.get("search/tweets", query, BotGotLatestTweet);
 };
 
+// setTimeout(() => {
+//   BotInit();
+// }, 5000);
+
 setInterval(() => {
   BotInit();
-}, 30 * 60 * 1000);
+  console.log("rodou");
+}, 1000);
