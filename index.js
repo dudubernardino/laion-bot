@@ -12,7 +12,12 @@ const Bot = new Twit({
 console.log("Este bot está rodando...");
 
 const BotInit = () => {
-  const search = ["o laion", "torcedor do kanal", "torcida do kanal"];
+  const search = [
+    "o laion",
+    "torcedor do kanal",
+    "torcida do kanal",
+    "@fortalezaec"
+  ];
 
   const BotGotLatestTweet = (err, data, response) => {
     if (err) {
