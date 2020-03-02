@@ -12,10 +12,7 @@ const Bot = new Twit({
 console.log("Este bot está rodando...");
 
 const BotInit = () => {
-  let query = {
-    q: "Laion",
-    result_type: "recent"
-  };
+  const search = ["o laion", "torcedor do kanal", "torcida do kanal"];
 
   const BotGotLatestTweet = (err, data, response) => {
     if (err) {
@@ -41,10 +38,17 @@ const BotInit = () => {
     }
   };
 
-  Bot.get("search/tweets", query, BotGotLatestTweet);
+  search.map(query => {
+    let newQuery = {
+      q: query,
+      result_type: "recent"
+    };
+
+    Bot.get("search/tweets", newQuery, BotGotLatestTweet);
+  });
 };
 
 setInterval(() => {
   BotInit();
   console.log("Rodou");
-}, 30 * 60 * 1000);
+}, 3 * 60 * 1000);
