@@ -17,7 +17,8 @@ const BotInit = () => {
     "torcedor do kanal",
     "torcida do kanal",
     "FortalezaEC",
-    "Fortaleza EC"
+    "Fortaleza EC",
+    "Laion"
   ];
 
   const BotGotLatestTweet = (err, data, response) => {
